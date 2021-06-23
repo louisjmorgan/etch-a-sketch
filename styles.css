@@ -1,0 +1,26 @@
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+    width: 960px;
+    height: 960px;
+}
+
+button {
+    margin: 1rem 0;
+}
+
+.cell {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.filled {
+    background-color: black;
+}
